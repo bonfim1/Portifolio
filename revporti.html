@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #831371;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            color: #831371;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            color: #831371;
+            margin-bottom: 10px;
+        }
+
+        #sobre {
+            background-color:#ffffff;
+            color: rgb(0, 0, 0);
+            padding: 50px 20px;
+        }
+
+        #projetos {
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        #contato {
+            background-color: #bb4ca5;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .imagens {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .img-fluid {
+            width: 48%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagens img:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin: 20px auto;
+            display: inline-block;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+            text-align: left;
+            margin: 20px auto;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+ 
+    <section id="sobre">
+        <h1>Sobre Mim</h1>
+        <p>Olá! Sou Luzivania, Aluna de Ciência de Dados (SI) da ESPM.</p>
+        <div>
+            <h2>Hard Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>HTML (Básico)</li>
+                <li>CSS (Básico)</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Tranquila</li>
+                <li>Boa em trabalho em grupo</li>
+                <li>Boa ouvinte</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos">
+        <h1>Meus Projetos</h1>
+        <div class="projeto">
+            <h2>Projeto 1</h2>
+            <p>3º lugar no Hackathon ESPM Escola Superior de Propaganda e Marketing - Ambev 2024. O desafio era desenvolver uma solução inovadora para melhorar as condições de vida dos vendedores ambulantes.</p>
+            <div class="imagens">
+                <img src="premio.jpeg" alt="Premiação Hackathon" class="img-fluid">
+                <img src="figmaHack.jpeg" alt="Projeto no Figma" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="projeto">
+            <h2>Projeto 2</h2>
+            <p>Projeto interdisciplinar do 1º semestre da faculdade, o Click-Run: um jogo de corrida desenvolvido em Arduino, feito em grupo.</p>
+            <div class="imagens">
+                <img src="proj1.jpeg" alt="Click-Run Projeto" class="img-fluid">
+                <img src="fotopj1.jpeg" alt="Click-Run Imagem" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="projeto">
+            <h2>Reconhecimento</h2>
+            <p>Conquistei o 1º lugar no Ranking Acadêmico do curso de Sistemas de Informação da ESPM, o que me motivou ainda mais a seguir na área de dados.</p>
+            <div class="imagens">
+                <img src="certificado.jpeg" alt="Certificado" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato">
+        <h1>Contato</h1>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/luzivania-de-jesus-bonfim-57a481281/" target="_blank">Luzivania de Jesus Bonfim</a></p>
+        <p>GitHub: <a href="https://github.com/bonfim1" target="_blank">bonfim1</a></p>
+    </section>
+
+</body>
+</html>
